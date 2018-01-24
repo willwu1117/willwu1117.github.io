@@ -1,25 +1,155 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Hello, world!</title>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
 
-    <!-- Bootstrap CSS -->
+    <title>Shiphtur Website</title>
+
+    <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
-    <p>
-      this is osometihngoq
-    </p>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- My own CSS -->
+    <link rel="stylesheet" href="more.css">
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- Custom styles for this template -->
+    <link href="justified-nav.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <header class="masthead">
+        <h3 class="text-muted">Shiphtur</h3>
+
+        <nav class="navbar navbar-expand-md navbar-light bg-light rounded mb-3">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse" style="font-size: 140%">
+            <ul class="navbar-nav text-md-center nav-justified w-100">
+              <li class="Home page">
+                <a href="index.html">
+                  <img src="shiphtur.jpg" style=";width:50px;height:55px;">
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item Shop">
+                <a class="nav-link" href="shiphtur.gg">Shop</a>
+              </li>
+              <li class="nav-item youtube">
+                <a class="nav-link" href="https://www.youtube.com/channel/UCvWRyci_KtYDRxH3nTiys0w">Videos</a>
+              </li>
+              <li class="nav-item About">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item Community">
+                <a class="nav-link" href="community.html">Community</a>
+              </li>
+              <li class="nav-item dropdown Social Media Links">
+                <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Social Media</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown01">
+                  <a href="https://twitter.com/shiphtur/">Twitter</a>
+                  <br>
+                  <a href="https://www.facebook.com/Shiphtur/">Facebook</a>
+                  <br>
+                  <a href="https://www.instagram.com/shiphtur/">Instagram</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <main role="main">
+        <p>
+          <!-- Carousel for header banner -->
+        <div id="myCarousel" class="carousel slide" data-ride="carousel" style="width:1050px; height:500px">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+
+          <div class="carousel-inner">
+            <div class="item active">
+              <iframe src="https://www.youtube.com/embed/ApdwJye0c1w" style="padding-left:101px;padding-right:101px;width:100%; height:500px">
+              </iframe>
+            </div>
+
+            <div class="item">
+              <iframe src="https://www.youtube.com/embed/_0zOIBVTyBw" style="padding-left:101px;padding-right:101px;width:100%; height:500px">
+              </iframe>
+            </div>
+
+            <div class="item">
+              <iframe src="https://www.youtube.com/embed/xFzXCLHWclA" style="padding-left:101px;padding-right:101px;width:100%; height:500px">
+              </iframe>
+            </div>
+
+          </div>
+
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev" style="width:100px">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next" style="width:100px">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+
+        </p>
+
+        <!-- Twitter Feed -->
+        <p>
+          <a class="twitter-timeline" data-width="200" data-height="400" data-theme="light" href="https://twitter.com/Shiphtur?ref_src=twsrc%5Etfw">Tweets by Shiphtur</a>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          <!-- Youtube Videos -->
+          <div id="youtubevideos">
+            <iframe src="https://www.youtube.com/embed/ApdwJye0c1w"></iframe>
+
+            <iframe src="https://www.youtube.com/embed/_0zOIBVTyBw" style="position:absolute;left:320px; bottom:146px">
+            </iframe>
+
+            <iframe src="https://www.youtube.com/embed/xFzXCLHWclA"></iframe>
+
+            <iframe src="https://www.youtube.com/embed/ktOWp-e0RXo" style="position:absolute;left:320px; top:160px"></iframe>
+          </div>
+        </p>
+
+        <!-- Instagram -->
+        <br>
+        <br>
+        <br>
+        <iframe src="https://snapwidget.com/embed/489398" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none;padding-right:95px; overflow:hidden; width:1150px; height:250px"></iframe>
+
+      </main>
+
+      <!-- Site footer -->
+      <footer class="footer">
+        <p>&copy; Shiphtur 2017</p>
+      </footer>
+
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </body>
 </html>

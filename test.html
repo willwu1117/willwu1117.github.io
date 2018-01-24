@@ -7,49 +7,52 @@
     <meta name="author" content="">
     <link rel="icon" href="../../../../favicon.ico">
 
-    <title>Justified Nav Template for Bootstrap</title>
+    <title>Shiphtur Official Website</title>
 
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link href="bootstrap-4.0.0-beta.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
 
     <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+    <link rel="stylesheet" href="more.css">
     <link href="justified-nav.css" rel="stylesheet">
   </head>
 
   <body>
-
-    <div class="container">
-
-      <header class="masthead">
-        <h3 class="text-muted">Project name</h3>
-
-        <nav class="navbar navbar-expand-md navbar-light bg-light rounded mb-3">
+    <header class="masthead">
+        <nav class="navbar navbar-expand-md navbar-light bg-mine border rounded mb-3" style="color:white;">
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="collapse navbar-collapse" id="navbarCollapse" style="font-size: 140%">
             <ul class="navbar-nav text-md-center nav-justified w-100">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <li class="Home page">
+                <a href="index.html">
+                  <img src="shiphtur.jpg" style=";width:50px;height:55px;">
+                  <span class="sr-only">(current)</span>
+                </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Projects</a>
+                <a class="nav-link" style="color:white;" href="shiphtur.gg">Shop</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Services</a>
+                <a class="nav-link" style="color:white;" href="https://www.youtube.com/channel/UCvWRyci_KtYDRxH3nTiys0w">Videos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Downloads</a>
+                <a class="nav-link" style="color:white;" href="about.html">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" style="color:white;" href="community.html">Community</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" style="color:white;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Social Media</a>
                 <div class="dropdown-menu" aria-labelledby="dropdown01">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
+                  <a href="https://twitter.com/shiphtur/">Twitter</a>
+                  <br>
+                  <a href="https://www.facebook.com/Shiphtur/">Facebook</a>
+                  <br>
+                  <a href="https://www.instagram.com/shiphtur/">Instagram</a>
                 </div>
               </li>
             </ul>
@@ -57,49 +60,199 @@
         </nav>
       </header>
 
-      <main role="main">
+    <main role="main">
 
-        <!-- Jumbotron -->
-        <div class="jumbotron">
-          <h1>Marketing stuff!</h1>
-          <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet.</p>
-          <p><a class="btn btn-lg btn-success" href="#" role="button">Get started today</a></p>
+      <!-- head banner -->
+      <div id="myCarousel" class="carousel slide" data-ride="carousel" style="left:85px;width:1140px; height:450px;">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <iframe src="https://www.youtube.com/embed/ApdwJye0c1w" style="padding-left:101px;padding-right:101px;width:100%; height:450px">
+            </iframe>
+          </div>
+
+          <div class="item">
+            <iframe src="https://www.youtube.com/embed/_0zOIBVTyBw" style="padding-left:101px;padding-right:101px;width:100%; height:450px">
+            </iframe>
+          </div>
+
+          <div class="item">
+            <iframe src="https://www.youtube.com/embed/xFzXCLHWclA" style="padding-left:101px;padding-right:101px;width:100%; height:450px">
+            </iframe>
+          </div>
+
         </div>
 
-        <!-- Example row of columns -->
-        <div class="row">
-          <div class="col-lg-4">
-            <h2>Heading</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev" style="width:100px">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next" style="width:100px">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+      <!-- merchandise carousel -->
+      <div id="myCarousel" class="carousel slide" data-ride="carousel" style="width:1140px; height:400px;left:85px">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <img class="carouselpic" src="shirt.jpg" alt="Shirt">
+            <div class="carousel-caption">
+              <h3>Los Angeles</h3>
+              <p>LA is always so much fun!</p>
+            </div>
           </div>
-          <div class="col-lg-4">
-            <h2>Heading</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
+
+          <div class="item">
+            <img src="shirt.jpg" alt="Chicago">
+            <div class="carousel-caption">
+              <h3>Chicago</h3>
+              <p>Thank you, Chicago!</p>
+            </div>
           </div>
-          <div class="col-lg-4">
-            <h2>Heading</h2>
-            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
-            <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
+
+          <div class="item">
+            <img src="ny.jpg" alt="New York">
+            <div class="carousel-caption">
+              <h3>New York</h3>
+              <p>We love the Big Apple!</p>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="ny.jpg" alt="New York">
+            <div class="carousel-caption">
+              <h3>New York</h3>
+              <p>We love the Big Apple!</p>
+            </div>
           </div>
         </div>
 
-      </main>
+        <!-- Left and right controls -->
+        <a class="left" href="#myCarousel" data-slide="prev">
+          <!-- <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span> -->
+        </a>
+        <a class="right" href="#myCarousel" data-slide="next">
+          <!-- <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span> -->
+        </a>
+      </div>
 
-      <!-- Site footer -->
-      <footer class="footer">
-        <p>&copy; Company 2017</p>
-      </footer>
+      <!-- youtube videos -->
+      <div class="album text-muted">
+        <div class="container">
+          <p class="headingtext">
+          Latest Youtube Videos
+          </p>
+          <div class="row">
+            <div class="card">
+              <a class="box overlay red" href="https://www.youtube.com/watch?v=ApdwJye0c1w" style="background-image:url(https://i.ytimg.com/vi/ApdwJye0c1w/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIZCGAE=&rs=AOn4CLDA63g6Gy1-_iDlzrgMDke273WtlA);">
+                <!-- <p class="videotext">Shiphtur | AD LEBLANC IS BROKEN! (NEW META)</p> -->
+              </a>
+              <a class="videotext" href="https://www.youtube.com/watch?v=ApdwJye0c1w" style="color: #000000;">Shiphtur | AD LEBLANC IS BROKEN! (NEW META)</a>
+            </div>
+            <div class="card">
+              <a class="box overlay red" href="https://www.youtube.com/watch?v=_0zOIBVTyBw" style="background-image:url(https://i.ytimg.com/vi/_0zOIBVTyBw/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIZCGAE=&rs=AOn4CLBkpT5NRfvM5xFrs5oKgiPuwZrKrg);">
+                <!-- <p class="videotext">Shiphtur | AD LEBLANC IS BROKEN! (NEW META)</p> -->
+              </a>
+              <a class="videotext" href="https://www.youtube.com/watch?v=_0zOIBVTyBw" style="color: #000000;">Shiphtur | TALIYAH 101!</a>
+            </div>
 
-    </div> <!-- /container -->
+            <!-- Twitter Feed -->
+            <div class="card">
+              <a class="twitter-timeline" data-width="300" data-height="400" data-theme="light" href="https://twitter.com/Shiphtur?ref_src=twsrc%5Etfw">Tweets by Shiphtur</a>
+              <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
 
+            <div class="card">
+              <a class="box overlay red" href="https://www.youtube.com/watch?v=xFzXCLHWclA" style="background-image:url(https://i.ytimg.com/vi/xFzXCLHWclA/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIZCGAE=&rs=AOn4CLDFfnJmYAopSYORRP7Krvy8Yl9__Q);">
+                <!-- <p class="videotext">Shiphtur | AD LEBLANC IS BROKEN! (NEW META)</p> -->
+              </a>
+              <a class="videotext" href="https://www.youtube.com/watch?v=xFzXCLHWclA" style="color: #000000;">Shiphtur | BECOMING A KASSAWIN ONETRICK?! ft. Imaqtpie</a>
+            </div>
+
+            <div class="card">
+              <a class="box overlay red" href="https://www.youtube.com/watch?v=ktOWp-e0RXo" style="background-image:url(https://i.ytimg.com/vi/ktOWp-e0RXo/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIZCGAE=&rs=AOn4CLAT_HlDGh5lcMTfC7eLvfYfkuJR_Q);">
+                <!-- <p class="videotext">Shiphtur | AD LEBLANC IS BROKEN! (NEW META)</p> -->
+              </a>
+              <a class="videotext" href="https://www.youtube.com/watch?v=ktOWp-e0RXo" style="color: #000000;">Shiphtur | FULL AP MACHINE GUN KOG'MAW - URF</a>
+            </div>
+
+            <!-- Instagram -->
+            <div>
+              <a href="https://www.instagram.com/shiphtur/" style="color:#000000" target="_blank" class="headingtext">
+              Follow Me on Instagram!
+              </a>
+              <iframe src="https://snapwidget.com/embed/489398" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:1140px; height:250px"></iframe>
+            </div>
+
+            <!-- Follow shiphtur -->
+            <div class="rt-block widget" style="left:50%; margin-left:-128px">
+              <div class="textwidget"><h2>Follow Shiphtur</h2>
+                <div class="img-container">
+                  <a href="https://www.facebook.com/shiphtur" title="Facebook page" target="_blank"><img src="icon-facebook.png" alt="Facebook" /></a>
+
+                  <a href="http://twitter.com/shiphtur" title="Twitter page" target="_blank"><img src="icon-twitter.png" alt="Twitter" /></a>
+
+                  <a href="https://instagram.com/shiphtur" title="Instagram page" target="_blank"><img src="icon-instagram.png" alt="Instagram" /></a>
+
+                  <a href="https://www.youtube.com/user/shiphtur" title="YouTube page" target="_blank"><img src="icon-youtube.png" alt="YouTube" /></a>
+
+                  <a href="https://www.twitch.tv/shiphtur" title="Twitch page" target="_blank"><img src="icon-twitch.png" style="width:40px;height:40px;" alt="Twitch" /></a>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="text-muted">
+      <div class="container">
+        <p class="float-right">
+          <a href="#">Back to top</a>
+        </p>
+        <p>&copy; Shiphtur</p>
+      </div>
+    </footer>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="bootstrap-4.0.0-beta.2/assets/js/vendor/popper.min.js"></script>
+    <script src="bootstrap-4.0.0-beta.2/dist/js/bootstrap.min.js"></script>
+    <script src="bootstrap-4.0.0-beta.2/assets/js/vendor/holder.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+      Holder.addTheme('thumb', {
+        bg: '#55595c',
+        fg: '#eceeef',
+        text: 'Thumbnail'
+      });
+    </script>
   </body>
 </html>
