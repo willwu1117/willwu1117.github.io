@@ -705,6 +705,14 @@ pre code {
   padding-left: 15px;
 }
 
+.col-title {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 50px;
+  padding-left: 150px;
+}
+
 .col {
   -ms-flex-preferred-size: 0;
       flex-basis: 0;

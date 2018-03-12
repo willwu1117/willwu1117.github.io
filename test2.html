@@ -63,7 +63,7 @@
     <main role="main">
 
       <!-- head banner -->
-      <div id="myCarousel" class="carousel slide" data-ride="carousel" style="left:85px;width:1140px; height:450px;">
+      <div id="myCarousel" class="carousel slide container" data-ride="carousel" style="width:auto; height:auto;">
         <!-- Indicators -->
         <ol class="carousel-indicators">
           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -72,19 +72,19 @@
         </ol>
 
         <!-- Wrapper for slides -->
-        <div class="carousel-inner">
+        <div class="carousel-inner border-0">
           <div class="item active">
-            <iframe src="https://www.youtube.com/embed/ApdwJye0c1w" style="padding-left:101px;padding-right:101px;width:100%; height:450px">
+            <iframe class="border-0" src="https://www.youtube.com/embed/ApdwJye0c1w" style="padding-left:101px;padding-right:101px;width:100%; height:450px;">
             </iframe>
           </div>
 
           <div class="item">
-            <iframe src="https://www.youtube.com/embed/_0zOIBVTyBw" style="padding-left:101px;padding-right:101px;width:100%; height:450px">
+            <iframe class="border-0" src="https://www.youtube.com/embed/_0zOIBVTyBw" style="padding-left:101px;padding-right:101px;width:100%; height:450px">
             </iframe>
           </div>
 
           <div class="item">
-            <iframe src="https://www.youtube.com/embed/xFzXCLHWclA" style="padding-left:101px;padding-right:101px;width:100%; height:450px">
+            <iframe class="border-0" src="https://www.youtube.com/embed/xFzXCLHWclA" style="padding-left:101px;padding-right:101px;width:100%; height:450px">
             </iframe>
           </div>
 
@@ -92,23 +92,24 @@
 
         <!-- Left and right controls -->
         <a class="left carousel-control" href="#myCarousel" data-slide="prev" style="width:100px">
-          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="carousel-control-prev-icon h-100" aria-hidden="true"></span>
+
           <span class="sr-only">Previous</span>
         </a>
         <a class="right carousel-control" href="#myCarousel" data-slide="next" style="width:100px">
-          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="carousel-control-next-icon h-100" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
       </div>
 
       <!-- merchandise carousel -->
-      <div id="myCarousel" class="carousel slide" data-ride="carousel" style="width:1140px; height:400px;left:85px">
+      <div id="merchCarousel" class="carousel slide container" data-ride="carousel" style="width:auto; height:auto; object-position: center;">
         <!-- Indicators -->
         <ol class="carousel-indicators">
-          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#myCarousel" data-slide-to="1"></li>
-          <li data-target="#myCarousel" data-slide-to="2"></li>
-          <li data-target="#myCarousel" data-slide-to="3"></li>
+          <li data-target="#merchCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#merchCarousel" data-slide-to="1"></li>
+          <li data-target="#merchCarousel" data-slide-to="2"></li>
+          <li data-target="#merchCarousel" data-slide-to="3"></li>
         </ol>
 
         <!-- Wrapper for slides -->
@@ -122,7 +123,7 @@
           </div>
 
           <div class="item">
-            <img src="shirt.jpg" alt="Chicago">
+            <img class="carouselpic" src="shirt.jpg" alt="Chicago">
             <div class="carousel-caption">
               <h3>Chicago</h3>
               <p>Thank you, Chicago!</p>
@@ -130,7 +131,7 @@
           </div>
 
           <div class="item">
-            <img src="ny.jpg" alt="New York">
+            <img class ="carouselpic" src="shirt.jpg" alt="New York">
             <div class="carousel-caption">
               <h3>New York</h3>
               <p>We love the Big Apple!</p>
@@ -138,7 +139,7 @@
           </div>
 
           <div class="item">
-            <img src="ny.jpg" alt="New York">
+            <img class="carouselpic" src="shirt.jpg" alt="New York">
             <div class="carousel-caption">
               <h3>New York</h3>
               <p>We love the Big Apple!</p>
@@ -147,22 +148,67 @@
         </div>
 
         <!-- Left and right controls -->
-        <a class="left" href="#myCarousel" data-slide="prev">
+        <a class="left" href="#merchCarousel" data-slide="prev">
           <!-- <span class="glyphicon glyphicon-chevron-left"></span>
           <span class="sr-only">Previous</span> -->
         </a>
-        <a class="right" href="#myCarousel" data-slide="next">
+        <a class="right" href="#merchCarousel" data-slide="next">
           <!-- <span class="glyphicon glyphicon-chevron-right"></span>
           <span class="sr-only">Next</span> -->
         </a>
       </div>
 
       <!-- Youtube Videos and Twitter Feed -->
-      
+      <div class="container pt-5">
+        <div class="row">
+          <p class="headingtext" style="width:60%;">Latest Youtube Videos</p>
+          <p class="headingtext" style="width:40%;">Tweets by Shiphtur</p>
+        </div>
+        
+        <div class="row">
+          <!-- Video Grid -->
+          <div class="col">
+            
+            <div class="card" style="width:20rem;">
+              <a class="box overlay red w-100" href="https://www.youtube.com/watch?v=ApdwJye0c1w" style="background-image:url(https://i.ytimg.com/vi/ApdwJye0c1w/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIZCGAE=&rs=AOn4CLDA63g6Gy1-_iDlzrgMDke273WtlA);"></a>
+              <a class="videotext" href="https://www.youtube.com/watch?v=ApdwJye0c1w" style="color: #000000;">Shiphtur | AD LEBLANC IS BROKEN! (NEW META)</a>
+            </div>
+            
+            <div class="card" style="width:20rem; height:inherit;">
+              <a class="box overlay red w-100" href="https://www.youtube.com/watch?v=_0zOIBVTyBw" style="background-image:url(https://i.ytimg.com/vi/_0zOIBVTyBw/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIZCGAE=&rs=AOn4CLBkpT5NRfvM5xFrs5oKgiPuwZrKrg);"></a>
+              <a class="videotext" href="https://www.youtube.com/watch?v=_0zOIBVTyBw" style="color: #000000;">Shiphtur | TALIYAH 101!</a>
+            </div>
+            
+          </div>
+          
+          <div class="col">
+
+            <div class="card" style="width:20rem;">
+              <a class="box overlay red w-100" href="https://www.youtube.com/watch?v=xFzXCLHWclA" style="background-image:url(https://i.ytimg.com/vi/xFzXCLHWclA/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIZCGAE=&rs=AOn4CLDFfnJmYAopSYORRP7Krvy8Yl9__Q);"></a>
+                 
+              <a class="videotext" href="https://www.youtube.com/watch?v=xFzXCLHWclA" style="color: #000000;">Shiphtur | BECOMING A KASSAWIN ONETRICK?! ft. Imaqtpie</a>
+            </div>
+            
+            
+            <div class="card" style="width:20rem;">
+              <a class="box overlay red w-100" href="https://www.youtube.com/watch?v=ktOWp-e0RXo" style="background-image:url(https://i.ytimg.com/vi/ktOWp-e0RXo/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIZCGAE=&rs=AOn4CLAT_HlDGh5lcMTfC7eLvfYfkuJR_Q);"></a>
+              <a class="videotext" href="https://www.youtube.com/watch?v=ktOWp-e0RXo" style="color: #000000;">Shiphtur | FULL AP MACHINE GUN KOG'MAW - URF</a>
+            </div>
+            
+          </div>
+            
+          
+          <div class="col">
+            <a class="twitter-timeline" style="" data-width="auto" data-height="95%" data-theme="light" href="https://twitter.com/Shiphtur?ref_src=twsrc%5Etfw"></a>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          </div>
+        </div>
+      </div>
         
         
         
       <!-- youtube videos -->
+<!--
       <div class="album text-muted">
         <div class="container">
           <p class="headingtext">
@@ -171,44 +217,41 @@
           <div class="row">
             <div class="card">
               <a class="box overlay red" href="https://www.youtube.com/watch?v=ApdwJye0c1w" style="background-image:url(https://i.ytimg.com/vi/ApdwJye0c1w/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIZCGAE=&rs=AOn4CLDA63g6Gy1-_iDlzrgMDke273WtlA);">
-                <!-- <p class="videotext">Shiphtur | AD LEBLANC IS BROKEN! (NEW META)</p> -->
               </a>
               <a class="videotext" href="https://www.youtube.com/watch?v=ApdwJye0c1w" style="color: #000000;">Shiphtur | AD LEBLANC IS BROKEN! (NEW META)</a>
             </div>
+-->
+            
+<!--
             <div class="card">
               <a class="box overlay red" href="https://www.youtube.com/watch?v=_0zOIBVTyBw" style="background-image:url(https://i.ytimg.com/vi/_0zOIBVTyBw/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIZCGAE=&rs=AOn4CLBkpT5NRfvM5xFrs5oKgiPuwZrKrg);">
-                <!-- <p class="videotext">Shiphtur | AD LEBLANC IS BROKEN! (NEW META)</p> -->
-              </a>
               <a class="videotext" href="https://www.youtube.com/watch?v=_0zOIBVTyBw" style="color: #000000;">Shiphtur | TALIYAH 101!</a>
             </div>
+-->
 
+<!--
             <div class="card">
               <a class="box overlay red" href="https://www.youtube.com/watch?v=xFzXCLHWclA" style="background-image:url(https://i.ytimg.com/vi/xFzXCLHWclA/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIZCGAE=&rs=AOn4CLDFfnJmYAopSYORRP7Krvy8Yl9__Q);">
-                <!-- <p class="videotext">Shiphtur | AD LEBLANC IS BROKEN! (NEW META)</p> -->
-              </a>
+                 
               <a class="videotext" href="https://www.youtube.com/watch?v=xFzXCLHWclA" style="color: #000000;">Shiphtur | BECOMING A KASSAWIN ONETRICK?! ft. Imaqtpie</a>
             </div>
+-->
 
+<!--
             <div class="card">
               <a class="box overlay red" href="https://www.youtube.com/watch?v=ktOWp-e0RXo" style="background-image:url(https://i.ytimg.com/vi/ktOWp-e0RXo/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIZCGAE=&rs=AOn4CLAT_HlDGh5lcMTfC7eLvfYfkuJR_Q);">
-                <!-- <p class="videotext">Shiphtur | AD LEBLANC IS BROKEN! (NEW META)</p> -->
-              </a>
               <a class="videotext" href="https://www.youtube.com/watch?v=ktOWp-e0RXo" style="color: #000000;">Shiphtur | FULL AP MACHINE GUN KOG'MAW - URF</a>
             </div>
+-->
               
-              
-            <!-- Twitter Feed -->
-            <div class="card">
-              <a class="twitter-timeline" data-width="300" data-height="400" data-theme="light" href="https://twitter.com/Shiphtur?ref_src=twsrc%5Etfw">Tweets by Shiphtur</a>
-              <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-            </div>
-
+        <div class="container pt-5">
             <!-- Instagram -->
             <div>
               <a href="https://www.instagram.com/shiphtur/" style="color:#000000" target="_blank" class="headingtext">
               Follow Me on Instagram!
               </a>
-              <iframe src="https://snapwidget.com/embed/489398" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:1140px; height:250px"></iframe>
+              <br />
+              <iframe src="https://snapwidget.com/embed/489398" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; height:250px"></iframe>
             </div>
 
             <!-- Follow shiphtur -->
@@ -227,19 +270,25 @@
                 </div>
               </div>
             </div>
+      </div>
 
-
+<!--
           </div>
         </div>
       </div>
+-->
     </main>
-
+    <br />
+    <br />
+    <br />
+    <br />
+    
     <footer class="text-muted">
       <div class="container">
         <p class="float-right">
           <a href="#">Back to top</a>
         </p>
-        <p>&copy; Shiphtur</p>
+        <p class="float-left">&copy; Shiphtur</p>
       </div>
     </footer>
 
